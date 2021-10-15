@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class TestServlet
+ * Servlet implementation class Men2Servlet
  */
-@WebServlet("/test")
-public class TestServlet extends HttpServlet {
+@WebServlet("/menu2")
+public class Men2Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public TestServlet() {
+    public Men2Servlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,7 +26,7 @@ public class TestServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("test", "Eclipse GitHub 연동 테스트입니다.");
+		request.setAttribute("test", "Menu2입니다.");
 		request.getRequestDispatcher("views/test/test.jsp").forward(request, response);
 	}
 
